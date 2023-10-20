@@ -28,6 +28,11 @@
         padding: 6px;
       }
     </style>
+    <script>
+      function unmute() {
+        document.getElementById("iamgoinginsanehelp").setAttribute("muted", "")
+      }
+    </script>
   </head>
   <body>
     <div class=head>
@@ -37,8 +42,9 @@
       <center><img src="https://tenor.com/view/goose-default-dance-dancing-dance-moves-feeling-good-gif-16364185.gif"></img></center>
       <p>haha get goosed loser, skill issue</p>
     </div>
-    <audio controls autoplay loop>
+    <audio controls autoplay muted loop id="iamgoinginsanehelp">
       <source src="https://ia803100.us.archive.org/23/items/Surasshu_-_Meek/Meek.mp3" type="audio/mpeg">
     </audio>
+    <script>unmute()</script>
   </body>
 <html>
